@@ -7,7 +7,7 @@ from datetime import datetime
 #v1
 #id=12
 def firstsale(userid):
-    now= datetime.utcnow()
+    now = datetime.utcnow()
     usera = db.session.query(UserAchievements).filter_by(userid=userid).first()
     if usera.v1 != 1:
         usera.v1 = 1
